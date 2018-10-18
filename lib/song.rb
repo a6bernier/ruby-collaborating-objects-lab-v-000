@@ -24,6 +24,7 @@ class Song
   def self.new_by_filename(filename)
     artist_name, song_name, genre_name = filename.chomp(".mp3").split(" - ")
     song = self.new(song_name)
+    binding.pry
     song.artist = artist_name
     song.genre = genre_name
     song.save
@@ -44,6 +45,6 @@ class Song
     self.artist.add_song(self)
 
   end
-#binding.pry
+
 
 end #ends class Song
