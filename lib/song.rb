@@ -2,8 +2,8 @@ require "pry"
 
 class Song
 
-  attr_accessor :genre
-  attr_reader :artist, :name
+  attr_accessor :genre, :name
+  attr_reader :artist, 
 
 
   def initialize(name)
