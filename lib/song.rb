@@ -11,7 +11,7 @@ class Song
   end
 
   def self.new_by_filename(filename)
-    
+    filename.chomp
   end
 
   def artist=(artist) #allows both objects to know about relationship
