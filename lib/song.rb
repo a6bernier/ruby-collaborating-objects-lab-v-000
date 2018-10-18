@@ -8,9 +8,11 @@ class Song
   def initialize(name)
     @name = name
     @artist = nil
-
   end
 
+  def self.new_by_filename(filename)
+
+  end
 
 
 
