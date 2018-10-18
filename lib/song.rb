@@ -10,6 +10,15 @@ class Song
     @artist = nil
   end
 
+  @@all = []
+
+  def self.all
+    @@all
+  end
+
+
+
+
   def self.new_by_filename(filename)
     artist_name, song_name, genre_name = filename.chomp.split(" - ")
     song = self.new(song_name)
