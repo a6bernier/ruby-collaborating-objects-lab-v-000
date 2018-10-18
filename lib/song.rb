@@ -34,4 +34,8 @@ class Song
     artist.add_song(self) unless artist.songs.include?(self)
   end
 
+  def songs
+    @songs
+  end
+
 end #ends class Song
