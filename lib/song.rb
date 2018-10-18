@@ -34,6 +34,7 @@ class Song
     artist.add_song(self)
   end
 
+binding.pry
 
 
 
