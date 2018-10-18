@@ -12,7 +12,7 @@ class Artist
 
   def add_song(song)
     @songs << song
-    song.artist  #allows both objects to know about relationship
+    song.artist =  #allows both objects to know about relationship
   end
 
   def save
