@@ -34,7 +34,7 @@ class Song
     artist.add_song(self) unless artist.songs.include?(self)
   end
 
-#binding.pry
+binding.pry
 
 
 
