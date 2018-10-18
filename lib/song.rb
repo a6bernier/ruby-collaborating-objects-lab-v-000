@@ -21,8 +21,6 @@ class Song
     self
   end
 
-
-
   def self.new_by_filename(filename)
     artist_name, song_name, genre_name = filename.chomp.split(" - ")
     song = self.new(song_name)
