@@ -2,7 +2,7 @@ require "pry"
 
 class Song
 
-  attr_accessor  :genre
+  attr_accessor :genre
   attr_reader :artist, :name
 
 
