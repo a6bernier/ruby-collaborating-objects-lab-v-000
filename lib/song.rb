@@ -30,7 +30,7 @@ class Song
   end
 
   def artist=(artist)
-    @artist = artist
+    self.artist = artist
     artist.add_song(self) unless artist.songs.include?(self)
     binding.pry
   end
