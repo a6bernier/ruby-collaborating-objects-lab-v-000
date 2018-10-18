@@ -11,7 +11,7 @@ class Song
   end
 
   def self.new_by_filename(filename)
-    filename.chomp.split(" - ")[0]
+    artist_name, song_name, genre_name = filename.chomp.split(" - ")[0]
   end
 
   def artist=(artist) #allows both objects to know about relationship
