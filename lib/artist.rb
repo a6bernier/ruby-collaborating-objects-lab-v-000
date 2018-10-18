@@ -40,8 +40,4 @@ class Artist
     end
   end
 
-  def songs
-    @songs
-  end
-
 end #ends class
