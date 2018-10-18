@@ -29,7 +29,7 @@ class Song
     song.save
   end
 
-  def artist=(artist) #allows both objects to know about relationship
+  def artist=(artist) 
     @artist = artist
     artist.add_song(self) unless artist.songs.include?(self)
   end
