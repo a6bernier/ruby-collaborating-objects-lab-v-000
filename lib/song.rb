@@ -29,10 +29,18 @@ class Song
     song.save
   end
 
-  def artist=(artist)
-    @artist = artist
-    artist.add_song(self) unless artist.songs.include?(self)
-  end
+  # def artist=(artist)
+  #   @artist = artist
+  #   artist.add_song(self) unless artist.songs.include?(self)
+  # end
+
+  def artist_name=(name)
+      self.artist = Artist.find_or_create_by_name(name)
+
+      self.artist.add_song(self)
+    end
+
+
 
 #binding.pry
 # it 'associates new song instance with the artist from the filename' do
