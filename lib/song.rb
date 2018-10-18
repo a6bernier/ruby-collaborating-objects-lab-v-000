@@ -11,10 +11,10 @@ class Song
   end
 
   def self.new_by_filename(filename)
-
+    
   end
 
-  def artist=(artist)
+  def artist=(artist) #allows both objects to know about relationship
     @artist = artist
     artist.add_song(self)
   end
