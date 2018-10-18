@@ -2,8 +2,8 @@ require "pry"
 
 class Song
 
-  attr_accessor :genre, :name
-  attr_reader :artist
+  attr_accessor :genre, :name, :artist
+  attr_reader
 
   def initialize(name)
     @name = name
@@ -30,7 +30,7 @@ class Song
   end
 
   def artist=(name)
-    #binding.pry
+    binding.pry
     self.artist = Artist.find_or_create_by_name(name)
     artist.add_song(self)
   end
