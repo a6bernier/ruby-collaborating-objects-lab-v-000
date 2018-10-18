@@ -31,7 +31,7 @@ class Song
 
   def artist=(artist) #allows both objects to know about relationship
     @artist = artist
-    artist.add_song(self)
+    self.artist.add_song(self)
   end
 
 #binding.pry
