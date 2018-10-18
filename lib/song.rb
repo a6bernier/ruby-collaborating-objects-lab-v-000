@@ -1,4 +1,4 @@
-
+require "pry"
 
 class Song
 
@@ -33,6 +33,8 @@ class Song
     @artist = artist
     artist.add_song(self)
   end
+
+
 
 
 
