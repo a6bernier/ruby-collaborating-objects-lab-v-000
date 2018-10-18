@@ -30,7 +30,7 @@ class Song
   end
 
   def artist=(artist)
-    self.artist = find_or_create_by_name(artist)
+    self.artist = Artist.find_or_create_by_name(artist)
     artist.add_song(self) unless artist.songs.include?(self)
     binding.pry
   end
