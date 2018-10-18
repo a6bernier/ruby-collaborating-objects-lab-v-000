@@ -12,8 +12,7 @@ class Artist
 
   def add_song(song)
     @songs << song unless @songs.include?(song)
-    song.artist = self #allows both objects to know about relationship
-  end
+    song.artist = self
 
   def save
     @@all << self
